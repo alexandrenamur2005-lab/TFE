@@ -1,0 +1,12 @@
+DB = SQLite3::Database.new "database.db"
+
+DB.execute <<-SQL
+  CREATE TABLE IF NOT EXISTS commandes (
+    id INTEGER PRIMARY KEY,
+    nom TEXT,
+    prenom TEXT,
+    classe TEXT,
+    type_sandwich TEXT,
+    crudites TEXT
+  );
+SQL

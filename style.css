@@ -1,0 +1,11 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1509440159596-0249088772ff");
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.menu {
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+}

@@ -1,0 +1,29 @@
+<h2>Admin - Commandes</h2>
+
+<table border="1">
+<tr>
+  <th>ID</th>
+  <th>Nom</th>
+  <th>Prénom</th>
+  <th>Classe</th>
+  <th>Sandwich</th>
+  <th>Crudités</th>
+  <th>Action</th>
+</tr>
+
+<% @commandes.each do |c| %>
+<tr>
+  <td><%= c[0] %></td>
+  <td><%= c[1] %></td>
+  <td><%= c[2] %></td>
+  <td><%= c[3] %></td>
+  <td><%= c[4] %></td>
+  <td><%= c[5] %></td>
+  <td>
+    <form action="/delete/<%= c[0] %>" method="post">
+      <button>Supprimer</button>
+    </form>
+  </td>
+</tr>
+<% end %>
+</table>
